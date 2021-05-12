@@ -4,5 +4,11 @@
 @{
 }
 <p>Welcome To our CoffeeShop</p>
-<p>Name     : @ViewData["FirstName"]  @ViewData["LastName"]</p>
-<p>Email Id : @ViewData["Email"]</p>
+<p>Name        : @ViewData["FirstName"]  @ViewData["LastName"]</p>
+<p>Email Id   : @ViewData["Email"]</p>
+<p>
+    Password : @for (int i = 0; i < (int)ViewData["Password"].ToString().Length; i++)
+    {
+    <text> * </text>
+    }
+<p>

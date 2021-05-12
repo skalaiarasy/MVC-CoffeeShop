@@ -11,7 +11,7 @@ namespace MVCCoffeeShop.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public int Password { get; set; }
+        public string Password { get; set; }
         public string Flavors { get; set; }
         public string Venilla { get; set; }
         public string Mocha { get; set; }
